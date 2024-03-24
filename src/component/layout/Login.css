@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+}
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Establecer el fondo negro */
+    color: white; /* Cambiar el color del texto a blanco */
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro transparente para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .login-form .links {
+    margin-top: 20px;
+  }
+  
+  .login-form .links li {
+    list-style: none;
+  }
+  
+  .login-form .links li a {
+    color: blue;
+  }
+  
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra al formulario */
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    color: white; /* Color del título blanco */
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc; /* Agrega bordes a los campos de entrada */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+  }
+  
+  .login-form input[type="button"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    cursor: pointer;
+  }
+  
+  .login-form input[type="button"]:hover {
+    background-color: #0056b3; /* Color de fondo azul oscuro al pasar el cursor */
+  }
+  
+  .links {
+    margin-top: 20px;
+  }
+  
+  .links li {
+    list-style: none;
+  }
+  
+  .links li a {
+    color: #007bff; /* Color del enlace azul */
+    text-decoration: none; /* Quita la subrayado del enlace */
+  }
+  
+  .links li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+  }
+  /* Login.css */
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+  color: black; /* Cambia el color del placeholder a negro */
+}
