@@ -1,0 +1,45 @@
+.registro-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+  }
+  
+  .registro-form {
+    width: 400px; /* Ancho del formulario */
+    padding: 40px; /* Aumenta el espacio interno del formulario */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo del formulario semi-transparente */
+  }
+  
+  .registro-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Color blanco para el título */
+  }
+  
+  .registro-form input[type="text"],
+  .registro-form input[type="email"],
+  .registro-form input[type="password"],
+  .registro-form input[type="number"] {
+    width: calc(100% - 20px); /* Ancho de los input */
+    margin-bottom: 20px; /* Espacio entre los input */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  .registro-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .registro-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
