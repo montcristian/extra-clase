@@ -19,6 +19,7 @@ function App() {
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
   const [contrasenaRegistro, setContrasenaRegistro] = useState("");
+  const [edad, setEdad] = useState("");
 
   const handleChangeNombre = (event) => {
     setNombre(event.target.value);
@@ -30,6 +31,10 @@ function App() {
 
   const handleChangeContrasenaRegistro = (event) => {
     setContrasenaRegistro(event.target.value);
+  }
+
+  const handleChangeEdad = (event) => {
+    setEdad(event.target.value);
   }
 
   const handleSubmitRegistro = (event) => {
@@ -50,13 +55,12 @@ function App() {
         nombre={nombre}
         correo={correo}
         contrasena={contrasenaRegistro}
+        edad={edad}
         onChangeNombre={handleChangeNombre}
         onChangeCorreo={handleChangeCorreo}
         onChangeContrasena={handleChangeContrasenaRegistro}
+        onChangeEdad={handleChangeEdad}
         onSubmit={handleSubmitRegistro}
-
-
-        
       />
     </>
   )
