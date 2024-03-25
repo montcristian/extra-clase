@@ -32,6 +32,7 @@ const RegistroUsuario = ({ nombre, correo, contrasena, edad, onChangeNombre, onC
      
         <input type="submit" value="Registrarse" />
         
+        <input type="submit" value="cancelar" />
       </form>
     </div>
   );
