@@ -1,26 +1,26 @@
-import React from 'react';
+
 import './Reservar.css'
 
-const Reserva = ({ nombre, apellido, email, fecha, hora, aceptarTerminos, setNombre, setApellido, setEmail, setFecha, setHora, setAceptarTerminos, handleSubmit }) => {
+const Reserva = () => {
     return (
         <div className="ReservaContainer">
             <div className="FormContainer">
                 <h2>Reserva tu equipo</h2> 
-                <form className="ReservaForm" onSubmit={handleSubmit}>
+                <form className="ReservaForm" >
                     <div>
-                        <input type="text" id="nombre" placeholder="Nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        <input type="text" id="nombre" placeholder="Nombre"  />
                     </div>
                     <div>
-                        <input type="text" id="apellido" placeholder="Apellido" value={apellido} onChange={(e) => setApellido(e.target.value)} />
+                        <input type="text" id="apellido" placeholder="Apellido" />
                     </div>
                     <div>
-                        <input type="email" id="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" id="email" placeholder="Email"  />
                     </div>
                     <div>
-                        <input type="date" id="fecha" placeholder="Fecha" value={fecha} onChange={(e) => setFecha(e.target.value)} />
+                        <input type="date" id="fecha" placeholder="Fecha" />
                     </div>
                     <div>
-                        <input type="time" id="hora" placeholder="Hora" value={hora} onChange={(e) => setHora(e.target.value)} />
+                        <input type="time" id="hora" placeholder="Hora"  />
                     </div>
                     <div>
                         <input type="checkbox" id="aceptarTerminos" />
