@@ -1,4 +1,4 @@
-
+import { useNavigate } from "react-router-dom";
 import Login from "./component/layout/Login";
 import RegistroUsuario from './component/layout/RegistroUsuario';
 import Contenido from './component/layout/Contenido';

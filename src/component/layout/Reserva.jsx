@@ -1,7 +1,20 @@
-
+import { useNavigate } from "react-router-dom";
 import './Reservar.css'
 
 const Reserva = () => {
+    //inicio navegador
+    const navigate = useNavigate();
+
+    const botonReservar= () => {
+      // Aquí puedes colocar la lógica de autenticación si es necesario
+      // Por ahora, simplemente redirigimos al usuario a la página de Contenido
+      navigate('/contenido');
+      };
+      const cancelarRegistro = () => {
+        // Redirigir al usuario a la página de Contenido
+        navigate('/contenido');
+      };
+    //termina  navegador
     return (
         <div className="ReservaContainer">
             <div className="FormContainer">
@@ -27,8 +40,8 @@ const Reserva = () => {
                         <label htmlFor="aceptarTerminos">Acepto los términos y condiciones de la política de la sala</label>
                     </div>
                     <div className="ButtonContainer">
-                        <button type="submit">Reservar</button>
-                        <button type="button" onClick={() => console.log("Registro cancelado")}>Cancelar Registro</button>
+                    <button type="submit"  onClick={botonReservar}>reservar</button>
+                    <button type="button" onClick={cancelarRegistro}>Cancelar Registro</button>
                     </div>
                 </form>
             </div>

@@ -30,7 +30,8 @@
     border-radius: 5px; /* Borde redondeado */
   }
   
-  .registro-form input[type="submit"] {
+  .registro-form input[type="submit"],
+  .registro-form input[type="button"] {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -40,6 +41,8 @@
     cursor: pointer;
   }
   
-  .registro-form input[type="submit"]:hover {
+  .registro-form input[type="submit"]:hover,
+  .registro-form input[type="button"]:hover {
     background-color: #0056b3;
   }
+  
