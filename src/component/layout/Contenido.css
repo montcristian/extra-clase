@@ -2,11 +2,14 @@
 .navbar {
     background-color: #0451a3;
     color: white;
-    padding: 10px 0;
-    width: 100%;
+    padding: 10px 20px; /* Aumentar el espacio de padding */
+    width: 100%; /* Ancho completo */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el navbar en la página */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex; /* Uso de Flexbox para un diseño responsivo */
     justify-content: space-between; /* Espaciado entre elementos */
+    border-radius: 10px; /* Agregar bordes redondeados */
 }
 
 /* Estilo para la lista de elementos de la barra de navegación */
@@ -36,6 +39,27 @@
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
 }
+
+/* Nuevo estilo para el contenedor del botón "cerrar sesión" */
+.navbar ul li:last-child {
+    margin-left: auto;
+}
+
+/* Estilo para el botón "cerrar sesión" */
+.navbar ul li:last-child a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilo al pasar el ratón sobre el botón "cerrar sesión" */
+.navbar ul li:last-child a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
 
 /* Espacio entre la barra de navegación y el contenedor de imágenes */
 .image-container {
