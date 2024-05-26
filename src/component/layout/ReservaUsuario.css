@@ -1,0 +1,59 @@
+.ReservaContainer {
+    margin: 20px;
+    padding-top: 40px; /* Añadir espacio arriba para evitar que el encabezado cubra la tabla */
+}
+
+.ReservaContainer h2 {
+    color: #fff; 
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(13, 22, 153); /* Fondo blanco para cubrir la tabla al hacer scroll */
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgb(13, 22, 153); /* Mismo sombreado que el segundo conjunto */
+    z-index: 999; /* Asegura que el encabezado esté por encima de la tabla */
+}
+
+.ReservaContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px; /* Añadir espacio arriba de la tabla para que no se solape con el encabezado */
+}
+
+.ReservaContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ReservaContainer th,
+.ReservaContainer td {
+    border: 1px solid rgb(13, 22, 153);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0); /* Mismo sombreado que el segundo conjunto */
+    padding: 8px;
+    text-align: left;
+}
+
+.ReservaContainer th {
+    background-color: #f2f2f2;
+}
+
+.ReservaContainer tr:hover {
+    background-color: #f5f5f5;
+}
+
+  /* Estilos para el botón */
+.ButtonContenido button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; /* Mismo margen superior que el segundo conjunto */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Mismo color de fondo del botón que el segundo conjunto */
+    color: white; /* Mismo color de texto del botón que el segundo conjunto */
+    cursor: pointer;
+}
+.ButtonContenido button:hover {
+    background-color: #0056b3; /* Mismo color de fondo al pasar el cursor que el segundo conjunto */
+}

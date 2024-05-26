@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="image-container">
-        <img src="logotipo.png" alt="logo" />
+        <img src="logo23.PNG" alt="logo" />
       </div>
       <div className="login-container">
         <form className="login-form">
