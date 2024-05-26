@@ -20,6 +20,10 @@ const RegistroUsuario = () => {
   //termina navegador
 
   return (
+    <div className="container">
+    <div className="image-container">
+      <img src="logo23.PNG" alt="logo" />
+    </div>
     <div className="registro-container">
       <form className="registro-form">
         <h2>Registro de usuario</h2>
@@ -31,6 +35,7 @@ const RegistroUsuario = () => {
      <input type="button" value="Cancelar" onClick={handleCancel} />
 
       </form>
+    </div>
     </div>
   );
 }

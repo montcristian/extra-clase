@@ -1,48 +1,50 @@
 .registro-container {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Altura completa de la ventana */
-  }
-  
-  .registro-form {
-    width: 400px; /* Ancho del formulario */
-    padding: 40px; /* Aumenta el espacio interno del formulario */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo del formulario semi-transparente */
-  }
-  
-  .registro-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white; /* Color blanco para el título */
-  }
-  
-  .registro-form input[type="text"],
-  .registro-form input[type="email"],
-  .registro-form input[type="password"],
-  .registro-form input[type="number"] {
-    width: calc(100% - 20px); /* Ancho de los input */
-    margin-bottom: 20px; /* Espacio entre los input */
-    padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del input */
-    border-radius: 5px; /* Borde redondeado */
-  }
-  
-  .registro-form input[type="submit"],
-  .registro-form input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .registro-form input[type="submit"]:hover,
-  .registro-form input[type="button"]:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.registro-form {
+  width: 400px; /* Ancho del formulario */
+  padding: 40px; /* Aumenta el espacio interno del formulario */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo del formulario semi-transparente */
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(13, 22, 153);
+}
+
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="password"],
+.registro-form input[type="number"] {
+  width: calc(100% - 20px); /* Ancho de los input */
+  margin-bottom: 20px; /* Espacio entre los input */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #000000;
+  border-radius: 5px; /* Borde redondeado */
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho del input */
+}
+
+.registro-form input::placeholder {
+  color: black;
+}
+
+.registro-form input[type="submit"],
+.registro-form input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.registro-form input[type="submit"]:hover,
+.registro-form input[type="button"]:hover {
+  background-color: #0056b3;
+}
