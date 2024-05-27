@@ -16,8 +16,8 @@ function ReservaUsuario() {
             <div className="image-container">
                 <img src="logo23.PNG" alt="logo" />
             </div>
-            <div className="ReservaContainer">
-                <h2>Historial de Reservas</h2>
+            <div className="Reservas">
+                <h3>Historial de Reservas</h3>
                 <table>
                     <thead>
                         <tr>
