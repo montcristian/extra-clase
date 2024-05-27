@@ -1,9 +1,9 @@
-.ReservaContainer {
+.Reservas {
     margin: 20px;
     padding-top: 40px; /* Añadir espacio arriba para evitar que el encabezado cubra la tabla */
 }
 
-.ReservaContainer h2 {
+.Reservas h3 {
     color: #fff; 
     font-size: 24px;
     position: fixed;
@@ -16,30 +16,30 @@
     z-index: 999; /* Asegura que el encabezado esté por encima de la tabla */
 }
 
-.ReservaContainer table {
+.Reservas table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 40px; /* Añadir espacio arriba de la tabla para que no se solape con el encabezado */
 }
 
-.ReservaContainer table {
+.Reservas table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.ReservaContainer th,
-.ReservaContainer td {
+.Reservas th,
+.Reservas td {
     border: 1px solid rgb(13, 22, 153);
     box-shadow: 0px 0px 10px rgb(0, 0, 0); /* Mismo sombreado que el segundo conjunto */
     padding: 8px;
     text-align: left;
 }
 
-.ReservaContainer th {
+.Reservas th {
     background-color: #f2f2f2;
 }
 
-.ReservaContainer tr:hover {
+.Reservas tr:hover {
     background-color: #f5f5f5;
 }
 
