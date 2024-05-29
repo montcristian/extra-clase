@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './Login.css';
 import { connDatabase } from "../config/fireBaseConfig";
 import { collection, getDocs } from "firebase/firestore";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,20 +27,26 @@ const Login = () => {
   }, []);
 
   const buscarUsuario = () => {
-    console.log("Buscando usuario:", user);
-    let estado = usuarios.some((usuario) => {
-      console.log(`Comparando con usuario: ${usuario.user}, contraseña: ${usuario.password}`);
-      return usuario.user.trim().toLowerCase() === user.trim().toLowerCase() && usuario.password.trim() === password.trim();
-    });
+    let estado = usuarios.some(
+      (usuario) => usuario.user === user && usuario.password === password);
     return estado;
   };
 
   const iniciarSesion = () => {
     if (buscarUsuario()) {
-      console.log("Bienvenido");
-      navigate('/contenido');
+      Swal.fire({
+        title: "Bienvenido...",
+        text: "Será redireccionado al Home",
+        icon: "success",
+      }).then(() => {
+        navigate("/contenido");
+      });
     } else {
-      console.log("Error de credenciales");
+      Swal.fire({
+        title: "Error",
+        text: "Usuario y/o contraseña incorrecto",
+        icon: "error",
+      });
     }
   };
 

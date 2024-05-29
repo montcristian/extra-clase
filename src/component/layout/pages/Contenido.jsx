@@ -3,7 +3,6 @@ import './Contenido.css'
 
 
 const Contenido = () => {
-    //inicio navegador
     const navigate = useNavigate();
 
     const botonReservas = () => {

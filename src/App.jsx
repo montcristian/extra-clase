@@ -1,10 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import Login from './component/layout/auth/Login.jsx'
-import RegistroUsuario from './component/layout/RegistroUsuario';
-import Contenido from './component/layout/Contenido';
-import Reserva from './component/layout/Reserva';
+import Contenido from "./component/layout/pages/Contenido.jsx";
+import RegistroUsuario from "./component/layout/pages/RegistroUsuario.jsx";
 import ReservaUsuario from "./component/layout/ReservaUsuario.jsx";
-
+import Reserva from "./component/layout/pages/Reserva.jsx"
 function App() {
 
   
