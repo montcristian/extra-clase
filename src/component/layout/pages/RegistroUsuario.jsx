@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useNavigate } from "react-router-dom";
 import './RegistroUsuario.css'
 
@@ -6,6 +7,7 @@ import './RegistroUsuario.css'
 //inicio navegador
 const RegistroUsuario = () => {
   const navigate = useNavigate(); //Navegador
+  
 
   
   const handleRegister = () => {

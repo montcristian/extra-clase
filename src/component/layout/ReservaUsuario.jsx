@@ -2,6 +2,7 @@ import React from 'react';
 import './ReservaUsuario.css';
 import { useNavigate } from "react-router-dom";
 
+
 function ReservaUsuario() {
     const navigate = useNavigate(); // Obtener la función de navegación
 
