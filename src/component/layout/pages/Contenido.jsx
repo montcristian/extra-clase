@@ -6,8 +6,7 @@ const Contenido = () => {
     const navigate = useNavigate();
 
     const botonReservas = () => {
-        // Aquí puedes colocar la lógica de autenticación si es necesario
-        // Por ahora, simplemente redirigimos al usuario a la página de Contenido
+      
         navigate('/reserva');
     };
     const BotonReservaUsuario = () => {
@@ -29,9 +28,6 @@ const Contenido = () => {
                 <li className="icono-navbar"><img src="icon.png" alt="icon" /></li> 
                     <li><a href="#" onClick={botonReservas}>Reservar</a></li>
                     <li><a href="#" onClick={BotonReservaUsuario}>Ver Reserva</a></li>
-                    <li><a href="#">Detalles</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
                     <li><div className="cerrar-sesion"><a href="#" onClick={BotonCerrarSesion}>Cerrar sesion</a></div></li>
                 </ul>
             </nav>
@@ -54,7 +50,7 @@ const Contenido = () => {
                 <div className="item">
                     <img src="menu4.png" alt="Imagen3" />
                     <div className="text">
-                        <h3>Contacto</h3>
+                        <h3>Contactos</h3>
                         <p>Nuestros contactos son:</p>
                     </div>
                 </div>

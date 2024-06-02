@@ -4,11 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 
 function ReservaUsuario() {
-    const navigate = useNavigate(); // Obtener la función de navegación
+    const navigate = useNavigate(); 
 
     const botonContenido = () => {
-        // Aquí puedes colocar la lógica de autenticación si es necesario
-        // Por ahora, simplemente redirigimos al usuario a la página de Contenido
+      
         navigate('/contenido');
     };
 
