@@ -12,16 +12,11 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   async function getUsuarios() {
-    try {
-      let collectionUsuarios = collection(connDatabase, 'usuarios');
-      let resultado = await getDocs(collectionUsuarios);
-      setUsuarios(resultado.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      console.log("Usuarios obtenidos:", resultado.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    } catch (error) {
-      console.error("Error al obtener usuarios:", error);
-    }
+    let collectionUsuarios = collection(connDatabase, "usuarios");
+    let resultado = await getDocs(collectionUsuarios);
+    setUsuarios(resultado.docs.map((doc) => ({ ...doc.data() })));
+    console.log(resultado.docs.map((doc) => ({ ...doc.data() })));
   }
-
   useEffect(() => {
     getUsuarios();
   }, []);
