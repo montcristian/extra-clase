@@ -50,7 +50,7 @@ const Contenido = () => {
                 <div className="item">
                     <img src="menu4.png" alt="Imagen3" />
                     <div className="text">
-                        <h3>Contacto</h3>
+                        <h3>Contactos</h3>
                         <p>Nuestros contactos son:</p>
                     </div>
                 </div>

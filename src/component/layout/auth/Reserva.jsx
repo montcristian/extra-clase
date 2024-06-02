@@ -101,7 +101,7 @@ const Reserva = () => {
     </div>
     <div className="ReservaContainer">
         <div className="FormContainer">
-            <h2>Reserva tu Equipo</h2>
+            <h2>Reserva tu equipo</h2>
             <form className="ReservaForm">
                 <div>
                     <input onChange={(e) => setNombre(e.target.value)} type="text" id="nombre" placeholder="Nombre" />
