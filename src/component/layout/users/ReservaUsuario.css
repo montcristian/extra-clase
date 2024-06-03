@@ -3,10 +3,9 @@
     padding-top: 40px; /* Añadir espacio arriba para evitar que el encabezado cubra la tabla */
 }
 
-.Reservas h3 {
-    color: #fff; 
+.Reservas h2 {
+    color: #fff;
     font-size: 24px;
-
     top: 0;
     left: 0;
     width: 100%;
@@ -20,11 +19,6 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 40px; /* Añadir espacio arriba de la tabla para que no se solape con el encabezado */
-}
-
-.Reservas table {
-    width: 100%;
-    border-collapse: collapse;
 }
 
 .Reservas th,
@@ -43,8 +37,9 @@
     background-color: #f5f5f5;
 }
 
-  /* Estilos para el botón */
-.ButtonContenido button {
+/* Estilos para el botón */
+.ButtonContenido button,
+.ButtonContenido input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin-top: 20px; /* Mismo margen superior que el segundo conjunto */
@@ -54,6 +49,8 @@
     color: white; /* Mismo color de texto del botón que el segundo conjunto */
     cursor: pointer;
 }
-.ButtonContenido button:hover {
+
+.ButtonContenido button:hover,
+.ButtonContenido input[type="submit"]:hover {
     background-color: #0056b3; /* Mismo color de fondo al pasar el cursor que el segundo conjunto */
 }
