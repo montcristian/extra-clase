@@ -21,8 +21,8 @@ const ReservaUsuario = () => {
 
     function eliminarUsuario(id) {
         Swal.fire({
-            title: "Are you sure?",
-            text: "You won't be able to revert this!",
+            title: "Esta seguro?",
+            text: "Esta accion no se puede revertir!",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -32,8 +32,8 @@ const ReservaUsuario = () => {
             if (result.isConfirmed) {
                 confirmar(id);
                 Swal.fire({
-                    title: "Deleted!",
-                    text: "Your file has been deleted.",
+                    title: "elminiado!",
+                    text: "Su reserva fue eliminada.",
                     icon: "success"
                 });
             }
