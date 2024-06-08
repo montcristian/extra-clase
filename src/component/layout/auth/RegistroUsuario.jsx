@@ -109,7 +109,7 @@ const RegistroUsuario = () => {
             type="password"
             placeholder="Ingresa tu contraseña"
           />
-          <input type="submit" value="Registrarse" onClick={registrarUsuario} />
+          <input type="button" value="Registrarse" onClick={registrarUsuario} />
           <input type="button" value="Cancelar" onClick={cancelar} />
         </form>
       </div>
