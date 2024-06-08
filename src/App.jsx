@@ -4,6 +4,8 @@ import Contenido from "./component/layout/pages/Contenido.jsx";
 import RegistroUsuario from "./component/layout/auth/RegistroUsuario.jsx";
 import ReservaUsuario from "./component/layout/users/ReservaUsuario.jsx"
 import Reserva from "./component/layout/auth/Reserva.jsx";
+import EditarReserva from "./component/layout/users/EditarReserva.jsx";
+
 function App() {
 
   
@@ -21,6 +23,8 @@ function App() {
       <Reserva/>
      
       <ReservaUsuario/>
+
+      <EditarReserva/>
 
     </>
   );

@@ -39,7 +39,7 @@
 
 /* Estilos para el botón */
 .ButtonContenido button,
-.ButtonContenido input[type="submit"] {
+.ButtonContenido input[type="button"] {
     width: 100%;
     padding: 10px;
     margin-top: 20px; /* Mismo margen superior que el segundo conjunto */
@@ -51,6 +51,6 @@
 }
 
 .ButtonContenido button:hover,
-.ButtonContenido input[type="submit"]:hover {
+.ButtonContenido input[type="button"]:hover {
     background-color: #0056b3; /* Mismo color de fondo al pasar el cursor que el segundo conjunto */
 }
