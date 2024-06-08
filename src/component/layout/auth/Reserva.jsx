@@ -132,7 +132,7 @@ const Reserva = () => {
                     <label htmlFor="aceptarTerminos">Acepto los términos y condiciones de la política de la sala</label>
                 </div>
                 <div className="ButtonContainer">
-                    <button type="submit" onClick={reservarEquipo }>Reservar</button>
+                    <button type="button" onClick={reservarEquipo }>Reservar</button>
                     <button type="button" onClick={cancelar}>Cancelar Registro</button>
                 </div>
             </form>

@@ -27,23 +27,25 @@ const Login = () => {
     return estado;
   };
 
-  const iniciarSesion = () => {
-    if (buscarUsuario()) {
-      Swal.fire({
-        title: "Bienvenido...",
-        text: "Será redireccionado al Home",
-        icon: "success",
-      }).then(() => {
-        navigate("/contenido");
-      });
-    } else {
-      Swal.fire({
-        title: "Error",
-        text: "Usuario y/o contraseña incorrecto",
-        icon: "error",
-      });
-    }
-  };
+  
+    const iniciarSesion = () => {
+      if (buscarUsuario()) {
+        Swal.fire({
+          title: "Bienvenido...",
+          text: "Será redireccionado al Home",
+          icon: "success",
+        }).then(() => {
+          navigate("/contenido", { state: { user } });
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "Usuario y/o contraseña incorrecto",
+          icon: "error",
+        });
+      }
+    };
+    
 
   const botonRegistro = () => {
     navigate('/registroUsuario');
@@ -67,9 +69,8 @@ const Login = () => {
             placeholder="Ingresa tu contraseña"
           />
           <input type="button" value="Iniciar Sesión" onClick={iniciarSesion} />
-          <div className="links">
-            <li><a href="#" onClick={botonRegistro}>Registrarse</a></li>
-          </div>
+          <input type="button" value="Registrarse" onClick={botonRegistro} />
+         
         </form>
       </div>
     </div>
