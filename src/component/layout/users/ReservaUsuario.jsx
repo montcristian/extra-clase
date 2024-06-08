@@ -1,12 +1,12 @@
 import './ReservaUsuario.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link  } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { connDatabase } from "../config/fireBaseConfig";
 import { collection, doc, getDocs, deleteDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
 
 const ReservaUsuario = () => {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
     const [usuarios, setUsuarios] = useState([]);
 
     async function getUsuarios() {
@@ -52,55 +52,57 @@ const ReservaUsuario = () => {
 
     return (
         <section className="panel Reservas">
-        <div className="container">
-            <div className="image-container">
-                <img src="logo23.PNG" alt="logo" />
-            </div>
-            <section className="panel">
-                <h2>Historial de reservas</h2>
-                <main className="panel-contenido">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>Email</th>
-                                <th>Fecha</th>
-                                <th>Hora</th>
-                                <th>Equipo</th>
-                                <th>Programa</th>
-                                <th>Tiempo</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {usuarios.map((element) => (
-                                <tr key={element.id}>
-                                    <td>{element.nombre}</td>
-                                    <td>{element.apellido}</td>
-                                    <td>{element.email}</td>
-                                    <td>{element.fecha}</td>
-                                    <td>{element.hora}</td>
-                                    <td>{element.equipo}</td>
-                                    <td>{element.programa}</td>
-                                    <td>{element.tiempo}</td>
-                                    <td className="ButtonContenido">
-                                        <button onClick={() => eliminarUsuario(element.id)}>Eliminar</button>
-                                    </td>
+            <div className="container">
+                <div className="image-container">
+                    <img src="logo23.PNG" alt="logo" />
+                </div>
+                <section className="panel">
+                    <h2>Historial de reservas</h2>
+                    <main className="panel-contenido">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Email</th>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Equipo</th>
+                                    <th>Programa</th>
+                                    <th>Tiempo</th>
+                                    <th>Acciones</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                    <section className="ButtonContenido">
-                        <div>
-                            <input type="submit" value="home" onClick={botonContenido} />
-                        </div>
-                    </section>
-                </main>
-            </section>
-        </div>
-    </section>
-);
+                            </thead>
+                            <tbody>
+                                {usuarios.map((element) => (
+                                    <tr key={element.id}>
+                                        <td>{element.nombre}</td>
+                                        <td>{element.apellido}</td>
+                                        <td>{element.email}</td>
+                                        <td>{element.fecha}</td>
+                                        <td>{element.hora}</td>
+                                        <td>{element.equipo}</td>
+                                        <td>{element.programa}</td>
+                                        <td>{element.tiempo}</td>
+                                        <td className="ButtonContenido">
+                                            <button>
+                                                <Link to={"/editar/" + element.id}>editar</Link></button>
+                                            <button onClick={() => eliminarUsuario(element.id)}>Eliminar</button>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                        <section className="ButtonContenido">
+                            <div>
+                                <input type="button" value="Home" onClick={botonContenido} />
+                            </div>
+                        </section>
+                    </main>
+                </section>
+            </div>
+        </section>
+    );
 };
 
 export default ReservaUsuario;
