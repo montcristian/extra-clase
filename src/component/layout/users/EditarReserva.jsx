@@ -94,10 +94,7 @@ const EditarReserva = () => {
                 <div>
                     <input onChange={(e) => setTiempo(e.target.value)} type="number" id="tiempoUso" placeholder="Tiempo de uso" />
                 </div>
-                <div>
-                    <input type="checkbox" id="aceptarTerminos" />
-                    <label htmlFor="aceptarTerminos">Acepto los términos y condiciones de la política de la sala</label>
-                </div>
+              
                 <div className="ButtonContainer">
                     <button type="button" onClick={editarUsuario}>Editar</button>
                     <button type="button" onClick={cancelar}>Cancelar Registro</button>
